@@ -1,0 +1,555 @@
+
+
+
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+
+}
+
+.container {
+    width: 1303px;
+    height: 50vh ;
+    background-image: url("computerscience.png");
+  
+    
+}
+.img_deg{
+    float:right;
+    width: 35%;
+    
+
+}
+.pos_cen{
+    position: sticky;
+    width:98% ;
+}
+
+/* Set a background color and text color */
+body {
+    background-color: rgba(255, 251, 251, 0.548);
+    font-family: "montserrat", sans-serif;
+    
+
+}
+
+/* Header styles */
+header {
+    background-color: #e6f7ff;
+    color: #261d42;
+    text-align: right;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    position: relative; /* Create a stacking context for the header */
+}
+
+/* Navigation menu styles */
+nav {
+    background-color: #000770;
+    text-align: center;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    position: relative; /* Create a stacking context for submenus */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    display: block;
+    padding: 10px;
+}
+ul li a:hover{
+    background-color: rgb(142, 143, 153);
+    color: rgb(29, 23, 23);
+    transition: 0.5s;
+}
+
+/* Styles for the submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the submenu below the parent */
+    left: 0;
+    background-color: #000770;
+    z-index: 2; /* Ensure the submenu appears above the navigation menu */
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 0;
+    display: block;
+}
+
+.submenu a {
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Style the Font Awesome arrow icon */
+nav li.dropdown > a i {
+    margin-left: 5px; /* Add spacing between the text and icon */
+    font-size: 12px; /* Adjust the icon size as needed */
+}
+
+/* Style the submenu items without the arrow */
+nav .submenu a {
+    display: block; /* Display the items as blocks */
+    white-space: nowrap; /* Prevent wrapping to the next line */
+    margin-right: 10px; /* Add spacing between items */
+    text-align: left; /* Align text to the left */
+}
+
+
+/* Main content styles */
+h1{
+    font-size: 28px;
+    color: #fff;
+    font-weight: 500;
+}
+#topic{
+    font-size: 20pt;
+    text-align: left;
+    font-weight: 500;
+    color: black;
+    padding-left: 10%;
+    
+}
+p {
+    
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgb(1, 11, 87);
+    
+}
+#p2{
+    color: #060131;
+    font-size:16pt ;
+    padding-left: 1%;
+   
+}
+
+p3{
+    color: #cf1010e5;
+    font-size: 20px;  
+    padding-left: 1%; 
+}
+p4{
+    color: rgb(22, 12, 77);
+    font-size: 15px;
+    
+}
+button{
+    width: 150px;
+    height: 40px;
+    background-color: #000770;
+    color: #fff;
+    border:2px solid blue;
+}
+button:hover{
+    background-color: transparent;
+    color: #000770;
+}
+.table-box{
+    margin: 5px auto;
+}
+.table-row{
+    display: table;
+    width: 70%;
+    margin: 2px auto;
+    font-family: sans-serif;
+    background:rgb(232, 232, 238) ;
+    padding: 5px 0;
+    color: #242020;
+    font-size: 5px;
+    box-shadow: 0 1px 4px 0 rgba(o,o,50,0.3);
+
+}
+.table-row1{
+    display: table;
+    width: 70%;
+    margin: 5px auto;
+    font-family: sans-serif;
+    background:rgb(89, 89, 94) ;
+    padding: 5px 0;
+    color: #242020;
+    font-size: 10px;
+    box-shadow: 0 1px 4px 0 rgba(o,o,50,0.3);
+}
+.table-row2{
+    display: table;
+    width: 70%;
+    margin: 5px auto;
+    font-family: sans-serif;
+    background:rgb(180, 180, 184) ;
+    padding: 5px 0;
+    color: #928181;
+    font-size: 10px;
+    box-shadow: 0 1px 4px 0 rgba(o,o,50,0.3);
+}
+
+.table-cell{
+    display: table-cell;
+    width: 10%;
+    text-align: center;
+    padding: 4px 0;
+    border-right:1px solid #ffffff;
+    vertical-align: middle;
+
+}
+
+
+/* CSS for your existing footer styles */
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding: 10px 0;
+    
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/*main styles*/
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and text color */
+body {
+    background-color: white;
+    font-family: "montserrat", sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #e6f7ff;
+    color: #261d42;
+    text-align: right;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    position: relative; /* Create a stacking context for the header */
+}
+
+.header-image-container {
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+/* Navigation menu styles */
+nav {
+    background-color: #000770;
+    text-align: center;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    position: relative; /* Create a stacking context for submenus */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    display: block;
+    padding: 10px;
+}
+
+/* Styles for the submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the submenu below the parent */
+    left: 0;
+    background-color: #000770;
+    z-index: 2; /* Ensure the submenu appears above the navigation menu */
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 0;
+    display: block;
+}
+
+.submenu a {
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Style the Font Awesome arrow icon */
+nav li.dropdown > a i {
+    margin-left: 5px; /* Add spacing between the text and icon */
+    font-size: 12px; /* Adjust the icon size as needed */
+}
+
+/* Style the submenu items without the arrow */
+nav .submenu a {
+    display: block; /* Display the items as blocks */
+    white-space: nowrap; /* Prevent wrapping to the next line */
+    margin-right: 10px; /* Add spacing between items */
+    text-align: left; /* Align text to the left */
+}
+/* Slider container styles */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Slider styles */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Slide styles */
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for the slider navigation buttons */
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent; /* Make the background transparent */
+    border: none;
+    cursor: pointer;
+    z-index: 3; /* Ensure buttons appear above the slides */
+    width: 50px; /* Adjust the button width as needed */
+    height: 50px; /* Adjust the button height as needed */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+.prev-button {
+    left: 20px;
+    background-image: url('back.png'); /* Replace with your left arrow image URL */
+    width: 50px;
+    height: 50px;
+}
+
+.next-button {
+    right: 20px;
+    background-image: url('right.png'); /* Replace with your right arrow image URL */
+    width: 50px;
+    height: 50px;
+}
+
+/* Style for button hover effect */
+.prev-button:hover,
+.next-button:hover {
+    background-color: rgb(161, 13, 13); /* Add a semi-transparent background color on hover */
+    width: 30px; /* Adjust as needed for smaller screens */
+    height: 30px;
+}
+
+
+
+/* Main content styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(1, 11, 87);
+}
+
+
+
+/* Style for the contact info section */
+#contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    flex-basis: calc(25% - 20px); /* Set the width for each contact box */
+}
+
+.contact-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 16px;
+}
+
+/* Style for the phone icon */
+.contact-box img {
+    width: 32px; /* Adjust the width as needed */
+    height: 32px; /* Adjust the height as needed */
+    margin-bottom: 10px;
+}
+nav {
+    background-color: #000770;
+    text-align: center;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    position: relative; /* Create a stacking context for submenus */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    display: block;
+    padding: 10px;
+}
+
+/* Styles for the submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the submenu below the parent */
+    left: 0;
+    background-color: #000770;
+    z-index: 2; /* Ensure the submenu appears above the navigation menu */
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 0;
+    display: block;
+}
+
+.submenu a {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.submenu1 {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the submenu below the parent */
+    left: 0;
+    background-color: #000770;
+    z-index: 2; /* Ensure the submenu appears above the navigation menu */
+}
+
+.drop2:hover .submenu1{
+    display: block;
+}
+
+.submenu1 li {
+    margin: 0;
+    display: block;
+}
+
+.submenu1 a {
+    padding: 18px;
+    font-size: 14px;
+}
+
+/* Style the Font Awesome arrow icon */
+nav li.dropdown > a i {
+    margin-left: 5px; /* Add spacing between the text and icon */
+    font-size: 12px; /* Adjust the icon size as needed */
+}
+
+/* Style the submenu items without the arrow */
+nav .submenu a {
+    display: block; /* Display the items as blocks */
+    white-space: nowrap; /* Prevent wrapping to the next line */
+    margin-right: 10px; /* Add spacing between items */
+    text-align: left; /* Align text to the left */
+}
+
+nav .submenu1 a {
+    display: block; /* Display the items as blocks */
+    white-space: nowrap; /* Prevent wrapping to the next line */
+    margin-right: 10px; /* Add spacing between items */
+    text-align: left; /* Align text to the left */
+}
+
+nav li.drop2 > a i {
+    margin-left: 10px; /* Add spacing between the text and icon */
+    font-size: 12px; /* Adjust the icon size as needed */
+}
+
+.dropdown-container {
+    display: inline;
+    background-color: #262626;
+    padding-left: 8px;
+    }

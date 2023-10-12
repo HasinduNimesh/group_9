@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Computer Science</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css/dep.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wef2epu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="KDU LOGO NEW.png">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-image-container">
+            <img src="kduheader.png" alt="Header Image" class="header-image">
+        </div>
+        <div class="back1">
+        <nav>
+            <ul>
+                <li class="dropdown"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="home.html">Programs <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="CS.html">Computer Science</a></li>
+                        <li><a href="SE.html">Software Engineering</a></li>
+                    </ul>
+                </li>                                            
+                <li class="dropdown">
+                    <a href="home.html">Research <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                      <li><a href="ResearchNews.html">Research News</a></li>
+                     
+                    </ul>
+                  </li>
+                <li class="dropdown">
+                    <a href="#">Staff<i class="fas fa-chevron-down"></i> </a>
+                    <ul class="submenu">
+                        <li><a href="staff.html">Acadamic Staff</a></li>
+                        <li><a href="non acadamic.html">Non Acadamic Staff</a></li>
+                    </ul>
+                <li class="dropdown"><a href="Contact_us.html">Contact</a></li>
+                <li>  
+                  <div class="search-container">
+                      <form id="search-form" onsubmit="search(); return false;">
+                          <input type="text" id="text-to-search" placeholder="Search..." name="search">
+                          <button type="submit">Search</button>
+                      </form>
+                  </div>
+                </li>
+              </div>
+    
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <div class="mobile-container ba1">
+
+        <div class="topnav">
+          <a href="#home" class="active" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>MENU</b></a>
+          <div id="myLinks">
+          
+          
+        <div class="sidenav">
+        
+          <a href="home.html" style="font-size: 14px;font-family:Verdana, Geneva, Tahoma, sans-serif ;">HOME</a>
+          
+          <button class="dropdown-btn" style="font-size: 14px;font-family:Verdana, Geneva, Tahoma, sans-serif ;">UNDERGRADUATE PROGRAMS 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="CS.html" class="ba1-2" style="font-size: 12px;font-family:Verdana, Geneva, Tahoma, sans-serif ;">BSC (HONS) COMPUTER SCIENCE DRGREE</a>
+            <a href="SE.html" class="ba1-2" style="font-size: 12px;font-family:Verdana, Geneva, Tahoma, sans-serif ;padding-bottom: 20px;">BSC (HONS) SOFTWARE ENGINEERING DEGREE</a>
+          </div>
+
+          <a href="ResearchNews.html" style="font-size: 14px;font-family:Verdana, Geneva, Tahoma, sans-serif ;">RESEARCH</a>
+
+          <button class="dropdown-btn" style="font-size: 14px;font-family:Verdana, Geneva, Tahoma, sans-serif ;">STAFF 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="staff.html" class="ba1-2" style="font-size: 12px;font-family:Verdana, Geneva, Tahoma, sans-serif ;">ACADEMIC STAFF</a>
+            <a href="non acadamic.html" class="ba1-2" style="font-size: 12px;font-family:Verdana, Geneva, Tahoma, sans-serif ;padding-bottom: 20px;">NON ACADEMIC STAFF</a>
+          
+          </div>
+          <a href="Contact_us.html" style="font-size: 14px;font-family:Verdana, Geneva, Tahoma, sans-serif;padding-bottom: 10px;">CONTACT US</a>
+
+        </div>  
+        </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        
+        
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="slider1.jpg" style="width:100%" height="450px">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="slider2.jpeg" style="width:100%" height="450px">
+    
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="slider3.jpg" style="width:100%" height="450px">
+          
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="slider4.jpg" style="width:100%" height="450px">
+            
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="slider5.jpg" style="width:100%" height="450px">
+            
+          </div>
+
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>  
+            <span class="dot"></span> 
+          </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+    <script src="contain.js"></script>
+
+  
+    <br>
+    <h2>Welcome to the Department of Computer Science</h2>
+    <br>
+
+    <div class="rows">
+        <img class="image2" src="https://foc.kdu.ac.lk/computer_science/wp-content/uploads/2021/10/banner1.jpg" alt="Banner">
+        <div class="side1">
+            <p id="p1">
+                The Department of Computer Science, founded on the 1st of January 2015, has been dedicated to the noble pursuit of nurturing computer science professionals of international repute. Our mission encompasses a twofold objective: to cater to the burgeoning IT industry's demands and to foster cutting-edge research in the field. 
+
+                As the youngest department within the faculty, we offer a comprehensive array of course modules. These modules delve into the scientific and theoretical aspects of computing, while also keeping a keen eye on the ever-evolving trends in computing, particularly within the domain of Artificial Intelligence.
+                <br><br>
+                We take immense pride in presenting two prominent academic programs: the BSc (Hons) in Computer Science and the BSc (Hons) in Software Engineering. These programs are tailored for students with a background in the physical sciences and those who have successfully completed their GCE A/L examinations.
+                
+                Our department's research endeavors span a wide spectrum, delving into the realms of Theoretical Computing and Artificial Intelligence. We are committed to not only enhancing our research culture but also contributing to the larger faculty-wide research landscape. In our quest for excellence, we continue to shape the future of computer science education and research, striving for academic and professional distinction.   
+            </p>
+        </div>
+    </div>
+
+
+<h3 id="deg"> Degrees offered by Department of Computer Science</h3>
+
+<div class="rows">
+  <div class="side2">
+  <div class="row">
+      <div class="col" style="padding-left: 40%;">
+          <div class="card card1">
+          <h1>Computer Science</h1>
+              <div class="card2_btn">
+                  <a href="CS.html" class="button">View More</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+  <div class="side2">
+    <div class="row">
+      <div class="card card2">
+        <h1>Software Engineering</h1>
+        <div class="card2_btn">
+            <a href="SE.html" class="button">View More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<div class="rows">
+    <div class="side">
+        Department of Computer Science,<br>
+        General Sir John Kotelawala Defence University,<br>
+        Kandawala Road,<br>
+        Rathmalana,<br>
+        Sri Lanka. <br><br>
+        +94-11-2605715
+        </div>
+    <div class="side">
+        <a href="https://foc.kdu.ac.lk/dit/">Department of Information Technology</a> <br><br>
+                <a href="https://foc.kdu.ac.lk/dcm/">  Department of Computational Mathematics</a><br><br>
+                <a href="https://foc.kdu.ac.lk/dce/" > Department of Computer Engineering</a>
+    </div>
+    <div class="side">
+         <a  href="https://kdu.ac.lk/">KDU Home</a><br><br>
+            <a  href="https://library.kdu.ac.lk/"> Library</a><br><br>
+            <a  href="http://nw.lms.kdu.ac.lk/lms/login/index.php">LMS</a>
+    </div>
+</div>
+<script>
+    
+    </script>
+
+    <footer>
+       <center> &copy; 2023 Department of Computer Science, KDU</center>   <a class="test" href="home.html">| Home</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,585 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Set a background color and text color */
+body {
+    background-color: white;
+    font-family: "montserrat", sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #e6f7ff;
+    color: #261d42;
+    text-align: right;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    position: relative; /* Create a stacking context for the header */
+}
+
+
+.header-image-container {
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+/* Navigation menu styles */
+nav {
+    background-color: #000770;
+    text-align: center;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    position: relative; /* Create a stacking context for submenus */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    display: block;
+    padding: 10px;
+}
+
+/* Styles for the submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the submenu below the parent */
+    left: 0;
+    background-color: #000770;
+    z-index: 2; /* Ensure the submenu appears above the navigation menu */
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 0;
+    display: block;
+}
+
+.submenu a {
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Style the Font Awesome arrow icon */
+nav li.dropdown > a i {
+    margin-left: 5px; /* Add spacing between the text and icon */
+    font-size: 12px; /* Adjust the icon size as needed */
+}
+
+/* Style the submenu items without the arrow */
+nav .submenu a {
+    display: block; /* Display the items as blocks */
+    white-space: nowrap; /* Prevent wrapping to the next line */
+    margin-right: 10px; /* Add spacing between items */
+    text-align: left; /* Align text to the left */
+}
+
+
+
+/* Style for the slider navigation buttons */
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent; /* Make the background transparent */
+    border: none;
+    cursor: pointer;
+    z-index: 3; /* Ensure buttons appear above the slides */
+    width: 50px; /* Adjust the button width as needed */
+    height: 50px; /* Adjust the button height as needed */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+.prev-button {
+    left: 20px;
+    background-image: url('back.png'); /* Replace with your left arrow image URL */
+    width: 50px;
+    height: 50px;
+}
+
+.next-button {
+    right: 20px;
+    background-image: url('right.png'); /* Replace with your right arrow image URL */
+    width: 50px;
+    height: 50px;
+}
+
+/* Style for button hover effect */
+.prev-button:hover,
+.next-button:hover {
+    background-color: rgb(255, 255, 255); /* Add a semi-transparent background color on hover */
+    width: 30px; /* Adjust as needed for smaller screens */
+    height: 30px;
+}
+
+
+
+/* Main content styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(1, 11, 87);
+}
+
+/* CSS for your existing footer styles */
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    
+    padding: 10px 0;
+   
+    bottom: 0;
+    width: 100%;
+}
+
+.test{
+    color: red;
+    padding-left: 80%;
+}
+
+
+/* Style for the contact info section */
+#contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    flex-basis: calc(25% - 20px); /* Set the width for each contact box */
+}
+
+.contact-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 16px;
+}
+
+/* Style for the phone icon */
+.contact-box img {
+    width: 32px; /* Adjust the width as needed */
+    height: 32px; /* Adjust the height as needed */
+    margin-bottom: 10px;
+}
+
+
+/* Style the Font Awesome arrow icon */
+
+
+/* Style the submenu items without the arrow */
+
+
+
+.container {
+    width: 1303px;
+    height: 50vh ;
+    background-image: url("computerscience.png");
+  
+    
+}
+.img_deg{
+    float:right;
+    width: 35%;
+    
+
+}
+.pos_cen{
+    position: sticky;
+    width:98% ;
+}
+
+
+ul li a:hover{
+    background-color: rgb(142, 143, 153);
+    color: rgb(29, 23, 23);
+    transition: 0.5s;
+}
+
+
+/* Main content styles */
+h1{
+    font-size: 28px;
+    color: #fff;
+    font-weight: 500;
+}
+h2{
+    font-size: 30px;
+    text-align: left;
+    font-weight: 500;
+    color: black;
+}
+p {
+    
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgb(1, 11, 87);
+    
+}
+
+
+
+
+
+
+/* Style for the slider navigation buttons */
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent; /* Make the background transparent */
+    border: none;
+    cursor: pointer;
+    z-index: 3; /* Ensure buttons appear above the slides */
+    width: 50px; /* Adjust the button width as needed */
+    height: 50px; /* Adjust the button height as needed */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+.prev-button {
+    left: 20px;
+    background-image: url('back.png'); /* Replace with your left arrow image URL */
+    width: 50px;
+    height: 50px;
+}
+
+.next-button {
+    right: 20px;
+    background-image: url('right.png'); /* Replace with your right arrow image URL */
+    width: 50px;
+    height: 50px;
+}
+
+/* Style for button hover effect */
+.prev-button:hover,
+.next-button:hover {
+    background-color: rgb(255, 255, 255); /* Add a semi-transparent background color on hover */
+    width: 30px; /* Adjust as needed for smaller screens */
+    height: 30px;
+}
+
+
+
+/*new slider styles*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*down information*/
+.rows {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    
+  }
+  .row1 {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+  }
+  .side1 {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    
+  }
+  .side2 {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    
+    padding: 20px;
+    background-color: #000770;
+  }
+
+
+  @media screen and (max-width: 700px) {
+    .rows {   
+      flex-direction: column;
+    }
+    .row1 {   
+        flex-direction: column;
+      }
+   
+  }
+
+
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(61, 61, 62);
+    position: relative;
+    }
+    
+    .topnav #myLinks {
+    display: none;
+    }
+    
+    .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    }
+    
+    .topnav a.icon {
+    background:rgb(61, 61, 62);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    
+    .topnav a:hover {
+    
+    color: rgb(255, 255, 255);
+    }
+    
+    .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    }
+    
+    .sidenav a:hover, .dropdown-btn:hover {
+    color:rgb(55, 149, 232);
+    }
+    
+    .active {
+    background-color:rgb(61, 61, 62);
+    color: white;
+    }
+    
+    .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+    }
+    
+    .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+    }
+    
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+
+    @media only screen and (max-width:767px) {
+        .circle {
+            width:125px;
+            height:125px;
+        }
+        .text2 {
+            font-size:1rem;
+        }
+        .hr1{
+            width:250px;
+        }
+    
+    }
+    
+    .ba1{
+    position: absolute;
+    z-index: 55;
+    width: 100%;
+    
+    
+    }
+    @media only screen and (min-width:795px) {
+        .ba1{
+            display:none;
+        }
+    } 
+
+    @media only screen and (max-width:795px) {
+        .back1{
+            display:none;
+        }
+    }
+
+    /* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  
+
+  /*search*/
+/* Style the search container */
+.search-container {
+    text-align: center;
+}
+
+/* Style the search input field */
+.search-container input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-bottom: 2px solid #000;
+    font-size: 16px;
+}
+
+/* Style the search button */
+.search-container button[type="submit"] {
+    background-color: #585c82c7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*search*/
+.highlighted {
+    background-color: rgb(251, 251, 156);
+    font-weight: bold;
+}
